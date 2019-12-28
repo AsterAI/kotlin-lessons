@@ -1,4 +1,11 @@
 
+/**
+ *  Видео на YouTube: https://www.youtube.com/watch?v=lng0IPI3rjA
+ *  К сожалению в видео я допустил ошибку. В условиях IF не добавил верхний предел 
+ *  Но в этом коде она исправлена. 
+ *
+ * Спасибо подписчику Константину что указал на неисправность  :)
+ */
 
 fun main(args: Array<String>) {
 
@@ -22,10 +29,12 @@ fun main(args: Array<String>) {
 
     var summ: Float = (friendCount * beerCost) + (crispsLikerCount * crispCost) + (crabLikerCount * crabCost);
 
-    if (summ >= 200) {
+    // В видео уроке я допустил ошибку. Не добавил верхние приделы для фильтрации
+    // "&& summ <= 499"
+    if (summ >= 200 && summ <= 499 ) {
         summ = summ * 0.95f;
         println("Your discount 5%!");
-    } else if (summ >= 500) {
+    } else if (summ >= 500 && summ <= 999) {
         summ = summ * 0.90f;
         println("Your discount 10%!");
     } else if (summ >= 1000) {
