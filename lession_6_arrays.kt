@@ -1,6 +1,6 @@
 
 /**
- *  Видео на YouTube: https://www.youtube.com/watch?v=62eQrYI86o0
+ *  Видео на YouTube: https://youtu.be/xebd7EN7gY0
  */
 
 fun main(args: Array<String>) {
